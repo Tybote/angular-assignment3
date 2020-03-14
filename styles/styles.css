@@ -59,3 +59,18 @@ h2 {
   clear: both;
   color: red;
 }
+
+thead th {
+    color: white;
+    background-color: #2e6da4;
+    border: solid 1px black;
+}
+
+tbody tr {
+  color: black;
+  background-color: #95ceff;
+}
+
+tbody td {
+  border: solid 1px black;
+}
