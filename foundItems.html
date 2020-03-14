@@ -1,10 +1,30 @@
 <div class="foundItems">
-    <ol>
+    <!--<ol>
         <li class="row" ng-repeat="item in list.found">
             <span class="col-md-3"><h4>Name : </h4> {{ item.name }} </span>
             <span class="col-md-3"><h4>Short Name : </h4>{{ item.short_name }}</span>
             <span class="col-md-3"><h4>Description : </h4>{{item.description}}</span>
             <span><button  class="col-md-3" ng-click="onRemove({index: $index});">Don't want this one!</button></span>
         </li>
-    </ol>
+    </ol>-->
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Short Name</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in list.found">
+            <td>{{ item.short_name }}</td>
+            <td>{{ item.name }}</td>
+            <td> {{ item.description }} </td>
+            <td>
+                <button ng-click="onRemove({index: $index});">Don't want this one!</button>
+            </td>
+          </tr>
+        </tbody>
+    </table>
 </div>
