@@ -50,3 +50,12 @@ input[type="text"] {
     transform: rotate(360deg);
   }
 }
+
+.foundItems {
+  clear: both;
+}
+
+h2 {
+  clear: both;
+  color: red;
+}
